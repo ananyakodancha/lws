@@ -1,0 +1,300 @@
+/* Dropdown Styling */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .dropdown .dropbtn {
+    background-color: #ec87f4;
+    color: #000000;
+    padding: 10px 22px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  #EDF7F6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color:#000000;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  } 
+
+
+/* Body and Header */
+body {
+  color: #ccc;
+  background-color: #efaef4;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  height: 100px;
+  background-color: #ec87f4;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header a {
+  color: #880367;
+  padding: 10px 25px; /* Padding left and right */
+  margin-right:0;
+  padding:52px 25px;
+  right: 10px;
+  text-decoration: none;
+  padding-top: 80px;
+}
+
+
+/* Centering Elements */
+.center-align, .welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.welcome p {
+  font-size: 60px;
+  margin: 0;
+  color: #880367;
+}
+
+/* Product Container and Cards */
+.product-container {
+   
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    width: auto;
+    height: 600px;
+  }
+  .product-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; /* Stretch all cards to equal height */
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(50% - 40px);
+  max-width: 300px;
+  min-height: 200px; /* Add this to give consistent card height */
+  border: 1px solid #3e3e3e;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #EDF7F6;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.product-card img {
+  width: 100%;
+  height: auto; /* Instead of fixed 50px */
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+ 
+ 
+  .product-card h2 {
+  margin-top: 10px;
+  font-size: 16px; /* Increased from 10px */
+  word-wrap: break-word;
+}
+
+.product-card p {
+  font-size: 14px; /* Increased from 5px */
+  color: #000;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  height: auto; /* Let it grow naturally */
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+  
+  .product-card p:last-child {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Buttons */
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  .review-btn {
+    background-color: #10012d12;
+    color: white;
+    padding: 14px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.review-btn:hover {
+    background-color: #bdd5ee;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 150px; /* Thumbnail height */
+  overflow: hidden;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.9s ease, scale 0.9s ease;
+}
+
+/* On hover, reveal full image by scaling inside the same box */
+.image-container:hover .product-img {
+  transform: scale(1); /* Adjust zoom level here */
+  object-fit: contain;
+  z-index: 2;
+  position: relative;
+}
+
+
+
+  .buy-now {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .add-to-cart {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  .buy-now:hover, .add-to-cart:hover,.wishlist-btn:hover {
+    opacity: 0.8;
+  }
+  /* Wishlist Button */
+  .wishlist-btn {
+    background-color: #008CBA;
+    color: white;
+    border: 1px solid #ddd;
+    width: 100px;
+  }
+  
+  .wishlist-btn span {
+    margin-right: 5px;
+  }
+  
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #6e4017;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #6e4017;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #563013;
+}
+
+/* Main Content */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .product-card {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+}

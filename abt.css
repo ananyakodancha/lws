@@ -1,0 +1,211 @@
+/* Resetting default margin and padding for all elements */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main styles */
+.main{
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    margin-bottom: 50px;   
+}
+
+html,
+body {
+  height: 100%;
+  background-color:black;
+}
+
+/* Body styles */
+body {
+  min-height: 100vh;
+}
+/* Header styles */
+header {
+    background-color: #FDEBD0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h2 {
+    color:#880367;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/*------content-----------*/
+
+/* Section styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #a09d9d;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.about {
+    padding: 20px 0;
+    margin-top: 10px; /* Adjust the value for desired spacing */
+    background-color:#b6b3b3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.aboutus {
+    font-weight: bold;
+    color: #880367;
+}
+
+.about p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* Footer styles */
+footer {
+    background-image: url(image/home2.jpeg);
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    width: 100%; /* Optionally remove border-bottom and padding-bottom */
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .footer .box-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+      gap: 1rem;
+  }
+  
+  .footer .box-container .box h3{
+      font-size: 2rem;
+      padding-bottom: 1rem;
+      color:white;
+  }
+  
+  .footer .box-container .box a{
+      font-size: 1rem;
+      padding-bottom: 0.5rem;
+      display: block;
+      color:#fbffff;
+  }
+  
+  /*move right smoothly*/
+  .footer .box-container .box a i{ 
+      padding-right:1 .5rem;
+      transition: .2s linear;
+  }
+  
+  /*move right*/
+  .footer .box-container .box a:hover i{
+      padding-right: 2rem;
+  }
+  
+  /*color change*/
+  .footer .box-container .box a:hover {
+      color: #d45ddd; /* Change link color on hover */
+  }
+  
+  
+  .footer .credit{
+      text-align: center;
+      padding-top:0.5rem;
+      margin-top: 1rem;
+      font-size: 2rem;
+      color:#880367;
+  }
+  
+  .footer .credit span{
+      color:#880367;
+  }
+  
+  .copyrite{
+      color: gray;
+  }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .welcome {
+        font-size: 1.2rem;
+    }
+
+    .banner_content h2 {
+        font-size: 18px;
+    }
+
+    .banner_section {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer .box h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer .box a {
+        font-size: 0.9rem;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: left;
+        margin: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 15px;
+    }
+
+    .mega_menu {
+        width: 100%;
+    }
+
+    .sub_menu {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcome {
+        font-size: 1rem;
+    }
+
+    .banner_content h2 {
+        font-size: 16px;
+    }
+
+    .footer .box h3 {
+        font-size: 1rem;
+    }
+
+    .footer .box a {
+        font-size: 0.8rem;
+    }
+}

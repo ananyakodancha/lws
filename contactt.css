@@ -1,0 +1,224 @@
+/* Resetting default margin and padding for all elements */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main styles */
+.main{
+    background:url(images/backgrounds/img7.jpg);
+    width: 100%;
+    height: 100%;
+    background-size:auto;
+    height: 100vh;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Body styles */
+body {
+  min-height: 100vh;
+  
+}
+/* Header styles */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h2 {
+    color:#ff7200;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.contact h2{
+    padding-top: 20px;
+    color: #fff;
+    font-size: 3em;
+}
+
+
+/*---------form-------------*/
+form {
+    width: 450px;
+    height:500px;
+    background-color:#6c6b6bcc;
+    position: absolute;
+    color:#000000;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    padding: 25px;
+    box-sizing: border-box; /* Include padding and border in width and height */
+}
+form h2 {
+    width: 250px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 0 auto; /* Center horizontally */
+    padding: 8px;
+}
+
+form textarea {
+    background-color: #9b9b9b; /* Set the desired background color */
+    border: 1px solid #000000;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    resize: none; /* Prevent resizing */
+    font-family: sans-serif;
+}
+
+form input{
+    width: 300px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #000000;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn { 
+    width: 400px;
+    height: 40px;
+    background: #0a0a0a;
+    font-weight: bold;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.btnn:hover{
+    color: #ff7200;
+}
+
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+
+/* Footer styles */
+footer {
+    background:linear-gradient(to top, rgba(0,0,0,0.2)50%,rgba(0,0,0,0.2)50%), url(images/backgrounds/footer.jpg);
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    width: 100%; /* Optionally remove border-bottom and padding-bottom */
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .footer .box-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+      gap: 1rem;
+  }
+  
+  .footer .box-container .box h3{
+      font-size: 2rem;
+      padding-bottom: 1rem;
+      color:white;
+  }
+  
+  .footer .box-container .box a{
+      font-size: 1rem;
+      padding-bottom: 0.5rem;
+      display: block;
+      color: #fff;
+  }
+  
+  /*move right smoothly*/
+  .footer .box-container .box a i{ 
+      padding-right:1 .5rem;
+      transition: .2s linear;
+  }
+  
+  /*move right*/
+  .footer .box-container .box a:hover i{
+      padding-right: 2rem;
+  }
+  
+  /*color change*/
+  .footer .box-container .box a:hover {
+      color: #ff7200; /* Change link color on hover */
+  }
+  
+  
+  .footer .credit{
+      text-align: center;
+      padding-top:0.5rem;
+      margin-top: 1rem;
+      font-size: 2rem;
+      color:#ff7200;
+  }
+  
+  .footer .credit span{
+      color:purple;
+  }
+  
+  .copyrite{
+      color: gray;
+  }
+
+  @media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .footer .box h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer .box a {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .footer .box h3 {
+        font-size: 1rem;
+    }
+
+    .footer .box a {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,185 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: monospace;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(images/backgrounds/img14.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; /* Adjust to focus on a specific area */
+}
+
+/* Form heading */
+/* main account section */
+  .wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 -15px 30px rgba(255, 255, 255, 0.1);
+  }
+
+  .wrapper .left .para{
+    padding-top: 50%;
+    font-size: 20px;
+
+  }
+  
+   .wrapper .left {
+    flex: 1;
+    background:#333;
+    padding: 10px 15px;
+    text-align: center;
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  } 
+  
+  .wrapper .right {
+    flex: 2;
+    width:40%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  .wrapper .right h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+    
+   .btn1, .update {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #6e83b3;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+  }
+  
+  .btn1:hover {
+    background-color: #558595;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .update:hover {
+    background-color: #2a2929;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+  
+    .wrapper {
+      width: 80%;
+      flex-direction: column;
+    }
+  
+    .wrapper .left,
+    .wrapper .right {
+      width: 100%;
+      border-radius: 0;
+    }
+  
+    .wrapper .right {
+      padding: 20px;
+    }
+  
+    .btn1, .update {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+  
+    .wrapper {
+      width: 90%;
+    }
+  
+    .wrapper .right p {
+      font-size: 16px;
+    }
+  
+    .btn1,.update {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+/* form {
+    width: 250px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.1); /* Semi-transparent black background
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 25px;
+    box-sizing: border-box;
+} */
+
+form h2 {
+    width: 250px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    background-color: #333; /* Dark gray background for heading */
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 8px;
+    color: #fff; /* White text color */
+}
+
+form input {
+    width: calc(100% - 20px);
+    height: 35px;
+    background: #f0f0f0; /* Light gray input background */
+    color: #333; /* Dark text color */
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #999; /* Light gray placeholder color */
+    font-family: Arial;
+}
+
+.update {
+    height: 40px;
+    font-weight: bold;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    background: #333; /* Dark gray background for button */
+}
+

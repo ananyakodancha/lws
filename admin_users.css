@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(images/backgrounds/img10.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Times New Roman';
+    padding-top: 270px;
+    color: #ff7200;
+    padding-left: 35px;
+    margin-top: 0%;
+    letter-spacing: 2px;
+}
+
+/* Role selection styles */
+.role-selection {
+    width: 300px;
+    height: 280px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    padding: 25px;
+    box-sizing: border-box; /* Include padding and border in width and height */
+}
+
+.role-selection h2 {
+    width: 250px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    margin: 0 auto; /* Center horizontally */
+    padding: 8px;
+}
+
+.role-selection a {
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 40px; /* Center text vertically */
+    background: #2e409c;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+    margin: 15px auto; /* Add margin and center horizontally */
+    text-decoration: none;
+}
+
+.role-selection a:hover {
+    background: #0a0c97;
+    color: #ffffff;
+}

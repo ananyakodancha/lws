@@ -1,0 +1,289 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.dropdown .dropbtn {
+  background-color: #6e4017;
+  color: #000000;
+  padding: 20px 25px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.product-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  width: 30%;
+  color:black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* .product-row {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+} */
+/* .product-card img {
+width: 200px; 
+height: 300px; 
+} */
+/* .product-card {
+width: calc(50% - 40px);
+max-width: 300px;
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 20px;
+margin: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+background-color: #fff;
+} */
+
+.product-card img {
+width: 100%;
+border-radius: 5px;
+}
+
+.product-card h2 {
+margin-top: 10px;
+font-size: 20px;
+}
+
+.product-card p {
+font-size: 16px;
+color: #666;
+}
+
+.product-card p:last-child {
+font-weight: bold;
+color: #333;
+}
+
+.buttons {
+margin-top: 20px;
+display: flex; /* Ensure buttons are displayed in a single line */
+justify-content: space-between; /* Add space between buttons */
+}
+.wishlist_btn1,
+.cart_btn1 {
+    background-color: #333;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; /* Increased border-radius for a smoother appearance */
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block; /* Ensure it's inline-block for proper spacing */
+}
+
+.wishlist_btn1 {
+    margin-right: 10px; /* Add margin to create space after the wishlist button */
+}
+
+.wishlist_btn1 a,
+.cart_btn1 a {
+    width: auto; /* Adjust to fit the content */
+    height: auto; /* Adjust to fit the content */
+    border-radius: 10px; /* Match the button's border-radius */
+    text-align: center;
+    line-height: normal; /* Adjust line height to normal */
+    font-size: 16px; /* Reduced font size to match the button */
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px; /* Added padding to match the button */
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.wishlist_btn1 a:hover,
+.cart_btn1 a:hover {
+    color: #ff7200;
+    border-color: #ff7200;
+}
+body {
+    color: #ccc;
+    background-color: #333;
+}
+header {
+    height: 100px;
+    background-color: #040a1c;
+    padding: 20px;
+    display: flex;
+    color: #ff7220;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+}
+header a {
+    margin: 10px;
+    position: absolute;
+    left: 20px;
+    color: #ff7220;
+    text-decoration: none;
+    padding-top: 80px;
+}
+.center-align {
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+    justify-content: center; /* Horizontally centers the items */
+    height: 100%; /* Ensure it takes full height of its parent */
+    width: 100%; /* Ensure it takes full width of its parent */
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure it takes full height of its parent */
+    width: 100%; /* Ensure it takes full width of its parent */
+}
+.welcome p {
+    font-size: 60px;
+    margin: 0; /* Remove default margin */
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-now {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.add-to-cart {
+  background-color: #008CBA;
+  color: white;
+}
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #6e4017; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #6e4017;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #6e4017;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+.wishlist-btn {
+  background-color: transparent;
+  color: #666;
+  border: 1px solid #ddd;
+  width:100px;
+}
+
+.wishlist-btn span {
+  margin-right: 1px;
+}
+
+.wishlist-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.wishlist-btn:hover span {
+  color: #ff0000; /* Change heart color on hover */
+}
+
+.buy-now:hover, .add-to-cart:hover {
+  opacity: 0.8;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 20px); /* Adjust width for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .product-card {
+    width: calc(100% - 20px); /* Full width for extra small screens */
+    margin: 10px;
+  }
+}
